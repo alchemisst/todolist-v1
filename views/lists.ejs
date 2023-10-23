@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <link rel="stylesheet" href="/styles/style.css">
+    <title>Document</title>
+    
+    <style>
+    
+        input[type="checkbox"]:checked + li {
+            text-decoration: line-through;
+        }
+    </style>
+ 
+</head>
+
+<body class="bg-[#263A29]">
+    <div  >
+      <div class="m-40 mb-7 mt-8 p-1 flex flex-col items-center rounded-lg bg-[#E86A33]"><h1 class="mx-6 text-3xl">Today is  <%=kindOfDay %></h1></div>
+
+
+
+
+      <div class="mx-40 rounded-lg bg-[#F2E3DB] p-2">
+        <ul class="items-center">
+          <div class="flex p-3">
+            <input class="flex-col" id="todoCheckbox" type="checkbox" name="" id="" />
+            <li for="todoCheckbox" class="mx-5 text-xl ">Buy food</li>
+          </div>
+          <hr />
+          <% for(var i=0;i<newItem.length;i++){ %>
+            <div class="flex p-3">
+                <input class="flex-col" type="checkbox" name="" id="" />
+                <li class="mx-5 text-xl"><%= newItem[i]%></li>
+                </div>
+                <hr />
+            <% } %>
+          <div class="flex">
+            <form class="flex" action="/" method="post">
+            <div class="mx-10 p-4"><input type="text" name="item" placeholder="New Item"/></div>
+            <div class="m-2" type="button">
+                <button class="h-10 w-10 rounded-full bg-blue-500 text-white hover:bg-red-500">+</button>
+              </div>
+            </form>
+            </div>
+        </ul>
+      </div>
+    </div>
+
+</body>
+</html>
