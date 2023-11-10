@@ -516,6 +516,9 @@ video {
 .flex {
   display: flex;
 }
+.hidden {
+  display: none;
+}
 .h-10 {
   height: 2.5rem;
 }
@@ -534,9 +537,9 @@ video {
 .rounded-lg {
   border-radius: 0.5rem;
 }
-.bg-\[\#263A29\] {
+.bg-\[\#8CC0DE\] {
   --tw-bg-opacity: 1;
-  background-color: rgb(38 58 41 / var(--tw-bg-opacity));
+  background-color: rgb(140 192 222 / var(--tw-bg-opacity));
 }
 .bg-\[\#E86A33\] {
   --tw-bg-opacity: 1;
